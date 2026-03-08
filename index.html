@@ -1,3 +1,16 @@
+<!--
+  PA Handbook Assistant
+  Copyright © 2026 Independent Lives (Charity No: 1153815)
+  All rights reserved.
+
+  This software, including all content, design and source code, is the
+  intellectual property of Independent Lives. Unauthorised reproduction,
+  distribution or modification is strictly prohibited.
+
+  Independent Lives, Ground Floor, Southfield House,
+  11 Liverpool Gardens, Worthing, West Sussex, BN11 1RY
+  info@independentlives.org | 01903 219482 | independentlives.org
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -293,6 +306,21 @@
     @media (max-width: 640px) {
       aside { display: none; }
     }
+
+    /* ── Copyright footer ── */
+    .copyright-bar {
+      background: var(--brand-blue);
+      color: rgba(255,255,255,0.7);
+      font-size: .72rem;
+      text-align: center;
+      padding: 7px 16px;
+      letter-spacing: .2px;
+    }
+    .copyright-bar a {
+      color: rgba(255,255,255,0.85);
+      text-decoration: none;
+    }
+    .copyright-bar a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
@@ -923,5 +951,14 @@ document.getElementById('user-input').addEventListener('keydown', e => {
   if (e.key === 'Enter') handleSend();
 });
 </script>
+
+<!-- Copyright footer -->
+<div class="copyright-bar">
+  &copy; 2026 <a href="https://www.independentlives.org" target="_blank" rel="noopener">Independent Lives</a> (Charity No: 1153815) &nbsp;&bull;&nbsp;
+  All rights reserved &nbsp;&bull;&nbsp;
+  Unauthorised reproduction or distribution is strictly prohibited &nbsp;&bull;&nbsp;
+  PA Handbook V.1, February 2026
+</div>
+
 </body>
 </html>
